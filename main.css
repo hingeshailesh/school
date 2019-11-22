@@ -1,0 +1,133 @@
+:root{
+    box-sizing: border-box;
+}
+*,
+::before,
+::after{
+    box-sizing: inherit;
+}
+body{
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+header{
+    background-color:tomato;
+    color: #ffffff;
+    border-radius: .3em;
+    padding: .1em;
+    text-align: center;
+}
+.navbar{
+    background-color: brown;
+    color: #ffffff;
+    padding: .1em;
+    border-radius: .3em;
+}
+.navbar ul li{
+    display: inline-block;
+
+}
+.navbar ul li a{
+    color:#ffffff;
+    text-decoration: none;
+    padding:1em;
+    border-radius: .3em;
+}
+.navbar ul li a:hover{
+    background-color: #ffffff;
+    color: black;
+
+}
+.showcase{
+    background: url('b.jpg');
+    background-size: cover;
+    min-height: 300px; 
+    text-align: center;
+    color: #ffffff;
+    border-radius: .5em;
+}
+.showcase h1{
+    margin-top: 0;
+    padding-top: 110px;
+}
+.main{
+    background-color: bisque;
+    width: calc(70% - 1em);
+    height: 300px;
+    padding: 1em;
+    line-height: 2em;
+    border-radius: .4em;
+    float: left;
+    color: brown;
+    
+}
+.main h1{
+    margin-top: 0;
+}
+.sidebar{
+    width: 30%;
+    float: left;
+    height: 300px;
+    overflow: hidden;
+    text-align: center;
+    background-color: bisque;
+    margin-left: 1em;
+    border-radius: .3em;
+    color: brown;
+}
+.sidebar img{
+    width: 100%;
+    height: 200px;
+}
+footer{
+    background-color: brown;
+    color: #ffffff;
+    text-align: center;
+    height: 60px;
+    margin-top: 300px;
+    text-align: center;
+    border-radius: .3em;
+       
+}
+footer h3{
+    padding-top: 20px;
+}
+
+@media (max-width:768px)
+{
+    body{
+        margin:0;
+    }
+    .container{
+        width: 100%;
+        margin: auto;
+    }
+    .showcase{
+        padding: 1em;
+    }
+    .showcase h1{
+        padding-top: 70px;
+    }
+    .main{
+        width: 100%;
+        height: auto;
+        margin-top: .5em;
+    }
+    .sidebar{
+        margin-top: .5em;
+        width: 100%;
+        margin-left: 0;
+        
+    }
+    .sidebar img{
+        width: auto;
+    }
+    footer{
+        margin-top: 600px;
+    }
+}
